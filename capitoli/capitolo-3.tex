@@ -8,10 +8,12 @@
 %**************************************************************
 
 \intro{Breve introduzione al capitolo}\\
+
 In questo capitolo viene descritto come si pianificato e svolto lo stage presso SAI, introducendo il progetto, considerando gli obiettivi e i possibili rischi.
 
 %**************************************************************
 \section{Introduzione al progetto}
+
 Lo stage svolto presso SAI aveva come scopo la creazione di un prototipo di piattaforma web/desktop per il caricamento delle registrazioni audio effettuate nelle aule di tribunale, con l'aiuto di alcuni metadata prodotti durante le medesime registrazioni. In particolare l'applicazione da sviluppare è divisa in due parti backend e frontend (spiegare meglio back e front) che comunicano tra loro mediante API rest (spiegare API). Lo stage si è focalizzato sullo sviluppo della parte frontend, avanzando di pari passo con lo sviluppo del  backend realizzata da altri membri del team di sviluppo. Per la realizzazione del frontend si è scelto di utilizzare Javascript con i framework React e Redux. 
 
 %**************************************************************
@@ -32,6 +34,7 @@ Nella fase di analisi iniziali si sono individuati i principali rischi a cui si 
 
 %**************************************************************
 \section{Requisiti e obiettivi}
+
 Si farà riferimento ai requisiti secondo le seguenti notazioni:
 \begin{itemize}
 \item O per i requisiti obbligatori, vincolanti in quanto obiettivo primario richiesto dal committente;
@@ -69,5 +72,32 @@ F04 & compilazione multipiattaforma dell’applicazione desktop \\
 \caption{Tabella dei Requisiti}
 \end{table}
 \end{center}
+
 %**************************************************************
 \section{Pianificazione}
+
+La pianificazione, in termini di quantità di ore, sarà distribuita in attività di studio e attività implementative.
+
+Lo stage è stato strutturato in due fasi principali, la prima dedicata alle attività di studio e la seconda alle attività implementative. Di seguito vengono elencate le attività pianificate con la relativa quantità di ore stimata per ogni attività.
+
+\begin{itemize}
+\item Studio delle tecnologie (80 ore)
+\begin{itemize}
+\item Setup di un prototipo di applicazione React e del backend (16 ore);
+\item Studio delle librerie necessarie (React, Redux, JWT, OAuth) (64 ore);
+\end{itemize}
+\item Implementazione prototipo (240 ore)
+\begin{itemize}
+\item Realizzazione dell’interfaccia di login (30 ore);
+\item Implementazione lettura e visualizzazione dei dati da CD (70 ore);
+\item Implementazione editing dei dati letti da CD (70 ore);
+\item Implementazione upload dei dati (30 ore);
+\item Testing dei prodotti realizzati (40ore);
+\end{itemize}
+\end{itemize}
+
+Per ogni attività riguardante la fase di implementazione del prototipo è stata prevista anche la relativa attività di testing.
+Il tutto viene rappresentato dal seguente dal diagramma di Gantt.
+\begin{center}
+	\includegraphics[width=14cm]{immagini/gantt.png}
+\end{center}
