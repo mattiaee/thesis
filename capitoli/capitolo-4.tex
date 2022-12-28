@@ -29,6 +29,80 @@ Essendo il progetto finalizzato alla creazione di un tool per l'automazione di u
 \label{uc:scenario-principale}
 \end{usecase}
 
+\begin{usecase}{1}{Autenticazione}
+\usecaseactors{Utente non autorizzato}
+\usecasepre{L'utente non si è ancora autenticato}
+\usecasedesc{Permette l'autenticazione di un utente}
+\usecasepost{L'utente è autenticato}
+\usecaseprinc{prova}
+\usecasealt{dswervr vrvrdd}
+\label{uc:autenticazione}
+\end{usecase}
+
+\begin{usecase}{1.1}{Inserimento Username}
+\usecaseactors{Utente non autorizzato}
+\usecasepre{L'utente è sulla pagina di autenticazione}
+\usecasedesc{Inserimento della username}
+\usecasepost{L'utente ha inserito lo username}
+\label{uc:inserimento-username}
+\end{usecase}
+
+\begin{usecase}{1.2}{Inserimento Password}
+\usecaseactors{Utente non autorizzato}
+\usecasepre{L'utente è sulla pagina di autenticazione}
+\usecasedesc{Inserimento della password}
+\usecasepost{L'utente ha inserito la password}
+\label{uc:inserimento-password}
+\end{usecase}
+
+\begin{usecase}{2}{Lettura Dati da CD}
+\usecaseactors{Utente autorizzato}
+\usecasepre{L'utente è nella pagina per il caricamento dati}
+\usecasedesc{Permette all'utente di caricare dei dati da CD selezionati}
+\usecasepost{L'utente visualizza i dati presenti nel CD}
+\label{uc:lettura-dati}
+\end{usecase}
+
+\begin{usecase}{3}{Visualizzazione Dati ordinati per file}
+\usecaseactors{Utente autorizzato}
+\usecasepre{L'utente si trova all'interno dell'applicazione}
+\usecasedesc{Permette la visualizzazione dei dati caricati da CD}
+\usecasepost{L'utente può visualizzare i dati caricati da CD ordinati per file}
+\label{uc:visulizzazione-dati-file}
+\end{usecase}
+
+\begin{usecase}{4}{Visualizzazione Dati ordinati per Procedimenti}
+\usecaseactors{Utente autorizzato}
+\usecasepre{L'utente si trova all'interno dell'applicazione}
+\usecasedesc{Permette la visualizzazione dei dati caricati da CD}
+\usecasepost{L'utente può visualizzare i dati caricati da CD ordinati per procedimenti}
+\label{uc:visualizzazione-dati-procedimenti}
+\end{usecase}
+
+\begin{usecase}{5}{Upload Dati}
+\usecaseactors{Utente autorizzato}
+\usecasepre{Lo sviluppatore è entrato nel plug-in di simulazione all'interno dell'IDE}
+\usecasedesc{La finestra di simulazione mette a disposizione i comandi per configurare, registrare o eseguire un test}
+\usecasepost{Il sistema è pronto per permettere una nuova interazione}
+\label{uc:upload-dati}
+\end{usecase}
+
+\begin{usecase}{6}{Visualizzazione Jobs}
+\usecaseactors{Utente autorizzato}
+\usecasepre{L'utente si trova all'interno dell'applicazione}
+\usecasedesc{Permette la visualizzazione dei jobs all'interno dell'applicazione}
+\usecasepost{L'utente può visualizzare i jobs}
+\label{uc:visualizzazione-jobs}
+\end{usecase}
+
+\begin{usecase}{7}{Visualizzazione singolo Job}
+\usecaseactors{Utente autorizzato}
+\usecasepre{L'utente si trova sulla pagina di visualizzazione dei jobs}
+\usecasedesc{Permette di visualizzare i dettagli del singolo job}
+\usecasepost{L'utente può visualizzare la pagina del singolo job}
+\label{uc:visualizzazione-job}
+\end{usecase}
+
 \section{Tracciamento dei requisiti}
 
 Da un'attenta analisi dei requisiti e degli use case effettuata sul progetto è stata stilata la tabella che traccia i requisiti in rapporto agli use case.\\
